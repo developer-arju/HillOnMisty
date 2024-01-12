@@ -37,14 +37,22 @@
                   </a>
                 </li> -->
               <li class="hover:text-green-600 transition-all hover:scale-110">
-                <a href="#about" class="no-underline hover:text-inherit">
+                <a
+                  href="#about"
+                  onclick="delayedScroll(event, 'about')"
+                  class="no-underline hover:text-inherit"
+                >
                   About us
                 </a>
               </li>
               <li
                 class="hover:text-green-600 transition-all hover:scale-110 cursor-pointer"
               >
-                <a href="#amenities" class="no-underline hover:text-inherit">
+                <a
+                  href="#amenities"
+                  onclick="delayedScroll(event, 'amenities')"
+                  class="no-underline hover:text-inherit"
+                >
                   Amenities
                 </a>
               </li>
@@ -200,7 +208,7 @@
         </aside>
         <img
           src="assets/hero_img.jpg"
-          class="w-full h-screen opacity-80"
+          class="w-full h-[calc(100vh-60px)] opacity-80"
           alt=""
         />
         <div class="absolute bottom-12 left-1/2 -translate-x-1/2">

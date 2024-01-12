@@ -11,7 +11,8 @@ document.addEventListener("scroll", () => {
 /** JUMP TO ELEMENTS WILL BE DELAYED ON SMALL SCREEN */
 function delayedScroll(event, targetId) {
   event.preventDefault();
-  const delay = 500;
+  const windowWidth = innerWidth;
+  const delay = windowWidth < 768 ? 550 : 0;
 
   setTimeout(() => {
     const targetElement = document.getElementById(targetId);
